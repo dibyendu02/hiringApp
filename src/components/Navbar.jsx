@@ -4,15 +4,15 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="bg-white fixed top-0 left-0 w-full z-10 shadow-md flex">
-      <div className="container mx-auto px-4 flex items-center  ">
+      <div className=" mx-auto px-4 flex items-center   ">
         <h3 className="text-black">
           <Link to="/">Logo</Link>
         </h3>
       </div>
 
-      <div className="container mx-auto px-4  ">
+      <div className=" mx-auto px-4  ">
         <div className="flex justify-center py-4 ">
-          <ul className="flex items-center bg-blue-950 px-10 py-3 rounded-[40px] ">
+          <ul className="md:flex items-center bg-blue-950 px-10 py-3 rounded-[40px] hidden ">
             <li className="mx-4 ">
               <Link to="/services" className="text-white font-normal">
                 Services
@@ -32,7 +32,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4  ">
+      <div className=" mx-auto px-4  ">
         <div className="flex justify-center py-4">
           <a
             href="#"
