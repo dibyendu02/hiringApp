@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import bg from "../assets/home/2.jpg";
 import Footer from "../components/Footer";
@@ -9,11 +9,82 @@ import bgVideo from "../assets/home/bgVideo.mp4";
 import human1 from "../assets/home/human1.png";
 import human2 from "../assets/home/human2.png";
 import human3 from "../assets/home/human3.png";
+import developer from "../assets/home/developer.png";
+import { FaDollarSign } from "react-icons/fa6";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Carousel from "../components/Carousel";
+import FAQ from "../components/Faq";
+
+const FAQs = [
+  {
+    question:
+      "WHAT IS THE PROCESS FOR FEDERAL GOVERNMENT & PRIVATE SECTOR RECRUITING",
+    answer: `Step 1: Review job description
+
+    Step 2: Identify the required and preferred skills / experience, education, certifications, bill rate and salary
+    
+    Step 3: Perform an internal database search in the Falcon ATS for qualified talent, network for referrals, post position(s) on job boards / social media sites
+    
+    Step 4: Identify and fully vet candidate(s) (assess skills, obtain references, etc)
+    
+    Step 5: Submit resume to hiring manager
+    
+    Step 6: Interview`,
+  },
+  {
+    question:
+      "WHAT IS THE PROCESS FOR FEDERAL GOVERNMENT & PRIVATE SECTOR RECRUITING",
+    answer: `Step 1: Review job description
+
+    Step 2: Identify the required and preferred skills / experience, education, certifications, bill rate and salary
+    
+    Step 3: Perform an internal database search in the Falcon ATS for qualified talent, network for referrals, post position(s) on job boards / social media sites
+    
+    Step 4: Identify and fully vet candidate(s) (assess skills, obtain references, etc)
+    
+    Step 5: Submit resume to hiring manager
+    
+    Step 6: Interview`,
+  },
+  {
+    question:
+      "WHAT IS THE PROCESS FOR FEDERAL GOVERNMENT & PRIVATE SECTOR RECRUITING",
+    answer: `Step 1: Review job description
+
+    Step 2: Identify the required and preferred skills / experience, education, certifications, bill rate and salary
+    
+    Step 3: Perform an internal database search in the Falcon ATS for qualified talent, network for referrals, post position(s) on job boards / social media sites
+    
+    Step 4: Identify and fully vet candidate(s) (assess skills, obtain references, etc)
+    
+    Step 5: Submit resume to hiring manager
+    
+    Step 6: Interview`,
+  },
+  {
+    question:
+      "WHAT IS THE PROCESS FOR FEDERAL GOVERNMENT & PRIVATE SECTOR RECRUITING",
+    answer: `Step 1: Review job description
+
+    Step 2: Identify the required and preferred skills / experience, education, certifications, bill rate and salary
+    
+    Step 3: Perform an internal database search in the Falcon ATS for qualified talent, network for referrals, post position(s) on job boards / social media sites
+    
+    Step 4: Identify and fully vet candidate(s) (assess skills, obtain references, etc)
+    
+    Step 5: Submit resume to hiring manager
+    
+    Step 6: Interview`,
+  },
+];
 
 const Home = () => {
+  const items = ["Item 1", "Item 2", "Item 3", "Item 4"]; // Replace with your actual carousel items
+
+  const [openIndex, setOpenIndex] = useState(null);
+
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
@@ -28,7 +99,7 @@ const Home = () => {
         {/* <img src={bg} className="w-full h-full  object-contain " /> */}
 
         <div className="w-[100%] h-[100%] overflow-y-scroll bg-transparent text-white top-24    pt-16 md:pt-20 ">
-          <div className="w-full h-36 bg-white mt-3 p-5 md:pl-40 ">
+          {/* <div className="w-full h-36 bg-white mt-3 p-5 md:pl-40 ">
             <p
               className="text-black w-80 md:w-96 md:text-xl text-lg"
               data-aos="fade-right"
@@ -37,13 +108,13 @@ const Home = () => {
               nationwide, offering staffing solutions for both temporary and
               permanent positions.
             </p>
-          </div>
+          </div> */}
 
-          <div className="md:pl-40 mt-10 p-8" data-aos="fade-right">
+          <div className="md:pl-40 mt-20 p-8" data-aos="fade-right">
             <h1 className="md:text-[5.5rem] text-7xl">Scalable Staffing </h1>
             <h1 className="md:text-[5.5rem] text-7xl font-bold">Solutions </h1>
             <p className="text-2xl md:w-[55%] w-[80%] pt-10 ">
-              Falcon helps small businesses in the federal sector grow. We
+              Pinaka helps small businesses in the federal sector grow. We
               quickly provide screened cleared candidates, better pricing,
               customizable contracts and flexible payment terms.
             </p>
@@ -55,16 +126,18 @@ const Home = () => {
           <div className="flex w-full justify-center mt-28 py-20 bg-transparent">
             <div className="flex flex-col md:flex-row">
               {/* Card 1 */}
-              <div className="max-w-xs bg-red-600  p-8 pb-20">
-                <h2 className="text-white text-lg font-semibold mb-2">
+              <div className="max-w-xs bg-red-600  p-10 pb-20 relative">
+                <div className="bg-blue-950 absolute w-2 h-20 left-4 top-8 rounded-md "></div>
+                <h2 className="text-white text-lg font-bold mb-2">
                   INDUSTRIES:
                 </h2>
                 <p className="text-white">Federal and Commercial Sectors</p>
               </div>
 
               {/* Card 2 */}
-              <div className="max-w-xs bg-blue-950  p-8 pb-20">
-                <h2 className="text-white text-lg font-semibold mb-2">
+              <div className="max-w-xs bg-blue-950  p-10 pb-20 relative">
+                <div className="bg-red-600 absolute w-2 h-20 left-4 top-8 rounded-md "></div>
+                <h2 className="text-white text-lg font-bold mb-2">
                   TECHNICAL EXPERTISE:
                 </h2>
                 <p className="text-white">
@@ -74,8 +147,9 @@ const Home = () => {
               </div>
 
               {/* Card 3 */}
-              <div className="max-w-xs bg-red-600  p-8 pb-20">
-                <h2 className="text-white text-lg font-semibold mb-2">
+              <div className="max-w-xs bg-red-600  p-10 pb-20 relative">
+                <div className="bg-blue-950 absolute w-2 h-20 left-4 top-8 rounded-md "></div>
+                <h2 className="text-white text-lg font-bold mb-2">
                   TALENT DATABASE:
                 </h2>
                 <p className="text-white">
@@ -85,8 +159,9 @@ const Home = () => {
               </div>
 
               {/* Card 4 */}
-              <div className="max-w-xs bg-blue-950  p-8 pb-20">
-                <h2 className="text-white text-lg font-semibold mb-2">
+              <div className="max-w-xs bg-blue-950  p-10 pb-20 relative">
+                <div className="bg-red-600 absolute w-2 h-20 left-4 top-8 rounded-md "></div>
+                <h2 className="text-white text-lg font-bold mb-2">
                   QUALIFIED:
                 </h2>
                 <p className="text-white">
@@ -95,6 +170,8 @@ const Home = () => {
               </div>
             </div>
           </div>
+
+          {/* What we offer */}
 
           <div className="relative w-full h-screen bg-blue-950">
             <video
@@ -119,6 +196,63 @@ const Home = () => {
                   important questions and let our database filter out qualified
                   candidates for your needs.
                 </h6>
+              </div>
+            </div>
+          </div>
+
+          {/* Why Choose Us */}
+
+          <div className="relative w-full md:h-[135%] h-[200%] bg-blue-950">
+            <img src={developer} alt="developer" className="content-cover" />
+            <div className="absolute md:w-[45%] md:left-32  inset-0 flex flex-col ">
+              <div className="bg-white px-8 py-3 md:w-80 w-60  rounded-b-xl">
+                <p className="text-black text-lg font-bold">Why Choose Us</p>
+              </div>
+              <div className="w-full flex flex-col md:flex-row md:p-5 ">
+                <div className="md:w-1/2 w-full p-5 flex flex-col gap-10">
+                  <div className="border w-14 h-14 flex justify-center items-center border-white p-2 rounded-md  ">
+                    <FaDollarSign color="white" size={30} className="" />
+                  </div>
+                  <h6 className="text-2xl">Flexible Payment Terms</h6>
+                  <p>
+                    Scalable pricing options/packages for small and large
+                    businesses alike.
+                  </p>
+                </div>
+                <div className="md:w-1/2 w-ful p-5 flex flex-col gap-10">
+                  <div className="border w-14 h-14 flex justify-center items-center border-white p-2 rounded-md  ">
+                    <FaDollarSign color="white" size={30} className="" />
+                  </div>
+                  <h6 className="text-2xl">Zero Cost Replacement Provision</h6>
+                  <p>
+                    We provide replacement candidates for those who did not
+                    quite meet your work standards within reason.
+                  </p>
+                </div>
+              </div>
+              <div className="w-full flex flex-col md:flex-row p-5 ">
+                <div className="md:w-1/2 w-full p-5 flex flex-col gap-10">
+                  <div className="border w-14 h-14 flex justify-center items-center border-white p-2 rounded-md  ">
+                    <FaDollarSign color="white" size={30} className="" />
+                  </div>
+                  <h6 className="text-2xl">
+                    Temp, Temp to Perm & Perm Placement Solutions
+                  </h6>
+                  <p>
+                    We have the opportunity to support an employment structure
+                    that is best suited to fit your needs.
+                  </p>
+                </div>
+                <div className="md:w-1/2 w-full p-5 flex flex-col gap-10">
+                  <div className="border w-14 h-14 flex justify-center items-center border-white p-2 rounded-md  ">
+                    <FaDollarSign color="white" size={30} className="" />
+                  </div>
+                  <h6 className="text-2xl">Cleared & Uncleared Recruiting</h6>
+                  <p>
+                    Our vast database and industry experience provides a robust
+                    pool of both cleared and uncleared candidates.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -157,14 +291,15 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="w-full md:h-[70vh] h-[130%] bg-blue-950">
+          {/* Testimonial */}
+          <div className="w-full md:h-[70vh] h-[150%] bg-blue-950">
             <div className="bg-white px-8 py-3 md:w-80 w-60 md:ml-20 rounded-b-xl">
               <p className="text-black text-lg font-bold">Testimonials</p>
             </div>
-            <div className="flex md:flex-row flex-col items-center md:justify-center gap-8 md:gap-16 md:pl-40 mt-10">
+            <div className="flex md:flex-row flex-col items-center md:justify-center gap-8 md:gap-16  mt-10 ">
               {/* Testimonial 1 */}
               <div className="max-w-xs  p-6 ">
-                <p className="text-white md:h-48">
+                <p className="text-white md:h-60">
                   "Pinaka Staffing Solutions provided us with top-notch
                   candidates, and their customer service is exceptional.I was
                   amazed by Pinaka's efficiency and professionalism. They made
@@ -181,7 +316,7 @@ const Home = () => {
 
               {/* Testimonial 2 */}
               <div className="max-w-xs  p-6 ">
-                <p className="text-white md:h-48">
+                <p className="text-white md:h-60">
                   "Incredible experience with Pinaka Staffing Solutions! Their
                   team provided us with highly qualified candidates, and their
                   customer service exceeded our expectations. Pinaka's
@@ -199,7 +334,7 @@ const Home = () => {
 
               {/* Testimonial 3 */}
               <div className="max-w-xs  p-6 ">
-                <p className="text-white md:h-48">
+                <p className="text-white md:h-60">
                   "Pinaka Staffing Solutions went above and beyond to deliver
                   outstanding candidates for our company. Their exceptional
                   customer service and expertise made working with them a
@@ -212,6 +347,26 @@ const Home = () => {
                   </h2>
                 </div>
               </div>
+            </div>
+          </div>
+          {/* Carousel  */}
+          <div className="w-full h-[100vh] bg-black">
+            <Carousel items={items} />
+          </div>
+          {/* FAQ  */}
+
+          <div className="w-full h-[120%] md:h-full  bg-white">
+            <div className="bg-black px-8 py-3 md:w-80 w-60 md:ml-20 rounded-b-xl">
+              <p className="text-white text-lg font-bold">FAQs</p>
+            </div>
+            <div className="w-full md:ml-40 mt-20 md:max-w-md">
+              {FAQs.map((item, index) => (
+                <FAQ
+                  key={index}
+                  question={item.question}
+                  answer={item.answer}
+                />
+              ))}
             </div>
           </div>
 
