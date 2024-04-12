@@ -56,18 +56,26 @@ const Home = () => {
             <div className="flex flex-col md:flex-row">
               {/* Card 1 */}
               <div className="max-w-xs bg-red-600  p-8 pb-20">
-                <h2 className="text-white text-lg font-semibold mb-2">
+                <h2
+                  className="text-white text-lg font-semibold mb-2"
+                  data-aos="fade-right"
+                >
                   INDUSTRIES:
                 </h2>
-                <p className="text-white">Federal and Commercial Sectors</p>
+                <p className="text-white" data-aos="fade-right">
+                  Federal and Commercial Sectors
+                </p>
               </div>
 
               {/* Card 2 */}
               <div className="max-w-xs bg-blue-950  p-8 pb-20">
-                <h2 className="text-white text-lg font-semibold mb-2">
+                <h2
+                  className="text-white text-lg font-semibold mb-2"
+                  data-aos="fade-right"
+                >
                   TECHNICAL EXPERTISE:
                 </h2>
-                <p className="text-white">
+                <p className="text-white" data-aos="fade-right">
                   Cyber Security, Software Development, Network Engineering and
                   more
                 </p>
@@ -75,10 +83,13 @@ const Home = () => {
 
               {/* Card 3 */}
               <div className="max-w-xs bg-red-600  p-8 pb-20">
-                <h2 className="text-white text-lg font-semibold mb-2">
+                <h2
+                  className="text-white text-lg font-semibold mb-2"
+                  data-aos="fade-right"
+                >
                   TALENT DATABASE:
                 </h2>
-                <p className="text-white">
+                <p className="text-white" data-aos="fade-right">
                   500,000 + IT Professionals w/ Fed Gov Security Clearance,
                   Fully Vetted
                 </p>
@@ -86,10 +97,13 @@ const Home = () => {
 
               {/* Card 4 */}
               <div className="max-w-xs bg-blue-950  p-8 pb-20">
-                <h2 className="text-white text-lg font-semibold mb-2">
+                <h2
+                  className="text-white text-lg font-semibold mb-2"
+                  data-aos="fade-right"
+                >
                   QUALIFIED:
                 </h2>
-                <p className="text-white">
+                <p className="text-white" data-aos="fade-right">
                   Helping Military Veterans find employment
                 </p>
               </div>
