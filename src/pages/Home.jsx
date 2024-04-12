@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import bg from "../assets/home/2.jpg";
 import Footer from "../components/Footer";
 import card from "../assets/home/laptop.png";
+import bgVideo from "../assets/home/bgVideo.mp4";
 
 const Home = () => {
   return (
@@ -84,7 +85,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="w-full h-screen bg-blue-950">
+          {/* <div className="w-full h-screen ">
             <div className="bg-white px-8 py-3 md:w-80 w-60 md:ml-20 rounded-b-xl">
               <p className="text-black text-lg font-bold">What We Offer</p>
             </div>
@@ -97,6 +98,33 @@ const Home = () => {
                 important questions and let our database filter out qualified
                 candidates for your needs.
               </h6>
+            </div>
+          </div> */}
+
+          <div className="relative w-full h-screen bg-blue-950">
+            <video
+              autoPlay
+              loop
+              muted
+              className="absolute inset-0 w-full h-full object-cover"
+            >
+              <source src={bgVideo} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div className="absolute inset-0 flex flex-col ">
+              <div className="bg-white px-8 py-3 md:w-80 w-60 md:ml-20 rounded-b-xl">
+                <p className="text-black text-lg font-bold">What We Offer</p>
+              </div>
+              <div className="md:ml-20 m-5 flex flex-col gap-5 mt-20">
+                <p className="text-xl">
+                  Seeking qualified candidates can be time-consuming
+                </p>
+                <h6 className="md:w-[50%] text-4xl">
+                  We understand our clients needs which is why we ask the
+                  important questions and let our database filter out qualified
+                  candidates for your needs.
+                </h6>
+              </div>
             </div>
           </div>
 
