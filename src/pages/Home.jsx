@@ -33,9 +33,9 @@ const Home = () => {
               className="text-black w-80 md:w-96 md:text-xl text-lg"
               data-aos="fade-right"
             >
-              Pinaka Staffing is a recruiting arm to federal government
-              contractors nationwide. We staff temp and permanent needs for your
-              company.
+              Pinaka Staffing specializes in recruiting for companies
+              nationwide, offering staffing solutions for both temporary and
+              permanent positions.
             </p>
           </div>
 
