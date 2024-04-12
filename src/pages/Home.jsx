@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import bg from "../assets/home/1.jpg";
+import bg from "../assets/home/2.jpg";
 import Footer from "../components/Footer";
 
 const Home = () => {

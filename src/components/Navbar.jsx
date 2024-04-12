@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { CiMenuBurger } from "react-icons/ci";
 
 const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false);
   return (
     <nav className="bg-white fixed top-0 left-0 w-full z-10 shadow-md flex">
       <div className=" mx-auto px-4 flex items-center   ">
         <h3 className="text-black">
-          <Link to="/">Logo</Link>
+          <Link
+            to="/"
+            onClick={() => {
+              setShowMenu(false);
+            }}
+          >
+            Logo
+          </Link>
         </h3>
       </div>
 
@@ -42,6 +51,54 @@ const Navbar = () => {
           </a>
         </div>
       </div>
+
+      <div
+        className="flex justify-center items-center mr-5 md:hidden"
+        onClick={() => {
+          setShowMenu(showMenu ? false : true);
+        }}
+      >
+        <CiMenuBurger color="black" size={24} />
+      </div>
+
+      {showMenu && (
+        <div className="absolute h-[100vh] w-full bg-blue-950 flex justify-center items-center top-20">
+          <ul className="flex flex-col gap-10 items-center">
+            <li className="mx-4 ">
+              <Link
+                to="/services"
+                className="text-white text-2xl font-normal"
+                onClick={() => {
+                  setShowMenu(false);
+                }}
+              >
+                Services
+              </Link>
+            </li>
+            <li
+              className="mx-4"
+              onClick={() => {
+                setShowMenu(false);
+              }}
+            >
+              <Link to="/about" className="text-white text-2xl font-normal">
+                About
+              </Link>
+            </li>
+            <li className="mx-4">
+              <Link
+                to="/contact"
+                className="text-white text-2xl font-normal"
+                onClick={() => {
+                  setShowMenu(false);
+                }}
+              >
+                Contact Us
+              </Link>
+            </li>
+          </ul>
+        </div>
+      )}
     </nav>
   );
 };
