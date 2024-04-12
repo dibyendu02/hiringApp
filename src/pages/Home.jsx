@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import bg from "../assets/home/2.jpg";
 import Footer from "../components/Footer";
+import card from "../assets/home/laptop.png";
 
 const Home = () => {
   return (
@@ -84,7 +85,7 @@ const Home = () => {
           </div>
 
           <div className="w-full h-screen bg-blue-950">
-            <div className="bg-white px-8 py-3 w-80 md:ml-20 rounded-b-xl">
+            <div className="bg-white px-8 py-3 md:w-80 w-60 md:ml-20 rounded-b-xl">
               <p className="text-black text-lg font-bold">What We Offer</p>
             </div>
             <div className="md:ml-20 m-5 flex flex-col gap-5 mt-20">
@@ -99,14 +100,42 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="w-full h-[80vh] bg-white">
-            <div className="bg-black px-8 py-3 w-80 md:ml-20 rounded-b-xl">
+          <div className="w-full md:h-[80vh]  bg-white">
+            <div className="bg-black px-8 py-3 md:w-80 w-60 md:ml-20 rounded-b-xl">
               <p className="text-white text-lg font-bold">Areas of Expertise</p>
+            </div>
+            <div className="flex flex-col h-full justify-between px-24 py-10 gap-20 items-center md:flex-row">
+              <div className="flex flex-col gap-2 justify-center items-center h-[80%] ">
+                <img
+                  src={card}
+                  alt="laptop"
+                  className="w-full h-[60%] rounded-xl"
+                />
+                <p className="text-xl text-black">CYBER SECURITY</p>
+              </div>
+              <div className="flex flex-col gap-2 justify-center items-center h-[80%] ">
+                <img
+                  src={card}
+                  alt="laptop"
+                  className="w-full h-[60%] rounded-xl"
+                />
+                <p className="text-xl text-black text-center">
+                  INFORMATION TECHNOLOGY
+                </p>
+              </div>
+              <div className="flex flex-col gap-2 justify-center items-center h-[80%] ">
+                <img
+                  src={card}
+                  alt="laptop"
+                  className="w-full h-[60%] rounded-xl"
+                />
+                <p className="text-xl text-black">HEALTHCARE IT</p>
+              </div>
             </div>
           </div>
 
           <div className="w-full md:h-[70vh] h-[130%] bg-blue-950">
-            <div className="bg-white px-8 py-3 w-80 md:ml-20 rounded-b-xl">
+            <div className="bg-white px-8 py-3 md:w-80 w-60 md:ml-20 rounded-b-xl">
               <p className="text-black text-lg font-bold">Testimonials</p>
             </div>
             <div className="flex md:flex-row flex-col items-center md:justify-center gap-8 md:gap-16 md:pl-40 mt-10">
