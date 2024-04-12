@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./About.css";
 import logo from "./img.jpg";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const about = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div className="main w-full">
       <Navbar />
 
       <section className="main-1">
-        <h1>About Us</h1>
+        <h1 data-aos="fade-right">About Us</h1>
       </section>
       <section className="main-2">
         <div className="main-2-para">
@@ -59,7 +64,7 @@ const about = () => {
             <h2>Overview</h2>
           </div>
           <div className="last-container-h2">
-            <h2>
+            <h2 data-aos="fade-right">
               Pinaka & Staffing Solutions, Pinaka assists businesses with
               temporary and direct hire staffing in the Public and Private
               Sectors. Falcon provides contingent recruiting services to
@@ -69,7 +74,7 @@ const about = () => {
             </h2>
           </div>
           <div className="last-container-p">
-            <p>
+            <p data-aos="fade-right">
               Pinaka & Staffing Solutions and Falcon offer staffing solutions
               tailored to the needs of businesses in both the Public and Private
               Sectors. Pinaka specializes in temporary and direct hire staffing,
@@ -85,10 +90,10 @@ const about = () => {
             <div className="box">
               <div className="box-head">
                 <div className="bar"></div>
-                <h3>Small Business Services</h3>
+                <h3 data-aos="fade-right">Small Business Services</h3>
               </div>
               <div className="box-desc">
-                <p>
+                <p data-aos="fade-right">
                   Falcon offers affordable hiring solutions and customizable
                   contracts and payment terms.
                 </p>
@@ -97,10 +102,10 @@ const about = () => {
             <div className="box">
               <div className="box-head">
                 <div className="bar"></div>
-                <h3>Contingent Recruiting</h3>
+                <h3 data-aos="fade-right">Contingent Recruiting</h3>
               </div>
               <div className="box-desc">
-                <p>
+                <p data-aos="fade-right">
                   These services include pricing, incumbent capture, key
                   personnel resumes and contingent offer letters.
                 </p>
@@ -109,10 +114,10 @@ const about = () => {
             <div className="box">
               <div className="box-head">
                 <div className="bar"></div>
-                <h3>Cleared Talent Recruiting</h3>
+                <h3 data-aos="fade-right">Cleared Talent Recruiting</h3>
               </div>
               <div className="box-desc">
-                <p>
+                <p data-aos="fade-right">
                   Top Secret, Interim Secret, Secret, Top Secret/SCI, Top
                   Secret/SCI with CI Poly, Top Secret/SCI with Lifestyle Poly.
                 </p>
@@ -121,10 +126,10 @@ const about = () => {
             <div className="box">
               <div className="box-head">
                 <div className="bar"></div>
-                <h3>Military Veteran Recruiting</h3>
+                <h3 data-aos="fade-right">Military Veteran Recruiting</h3>
               </div>
               <div className="box-desc">
-                <p>
+                <p data-aos="fade-right">
                   Help military veterans assimilate into the workforce, help
                   businesses meet their military veterans hiring goals.
                 </p>

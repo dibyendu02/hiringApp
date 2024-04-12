@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import bg from "../assets/home/1.jpg";
 import Footer from "../components/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -59,7 +64,7 @@ const Contact = () => {
         <img src={bg} className="w-full h-full  object-contain " />
 
         <div className="w-[100%]  md:absolute bg-[#c7c7c7] text-white top-24  md:px-28 p-10 pt-16 md:pt-20 pb-10 ">
-          <div className="md:w-[45%] ">
+          <div className="md:w-[45%] " data-aos="fade-right">
             <p className="text-blue-950 text-4xl">Contact Us</p>
             <br />
             <p className="text-blue-950 text-4xl tracking-widest ">

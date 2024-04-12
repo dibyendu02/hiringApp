@@ -1,21 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import "./Services.css";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Services = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div>
       <Navbar />
       <div className="service-container">
         <section className="service-header">
-          <h2>Areas of Expertise</h2>
+          <h2 data-aos="fade-right">Areas of Expertise</h2>
         </section>
         <section className="grid-container">
           <div className="grid-item">
             <div className="grid-item-header">
               <div className="grid-item-header-bar"></div>
-              <h2>APPLICATIONS DEVELOPMENT & INTEGRATION</h2>
+              <h2 data-aos="fade-right">
+                APPLICATIONS DEVELOPMENT & INTEGRATION
+              </h2>
             </div>
             <div className="grid-item-list">
               <ul>
@@ -38,7 +45,7 @@ const Services = () => {
           <div className="grid-item">
             <div className="grid-item-header">
               <div className="grid-item-header-bar"></div>
-              <h2>NETWORK ENGINEERING AND OPERATIONS</h2>
+              <h2 data-aos="fade-right">NETWORK ENGINEERING AND OPERATIONS</h2>
             </div>
             <div className="grid-item-list">
               <ul>
@@ -58,7 +65,7 @@ const Services = () => {
           <div className="grid-item">
             <div className="grid-item-header">
               <div className="grid-item-header-bar"></div>
-              <h2>SYSTEM AND DATABASE ADMINISTRATION</h2>
+              <h2 data-aos="fade-right">SYSTEM AND DATABASE ADMINISTRATION</h2>
             </div>
             <div className="grid-item-list">
               <ul>
@@ -77,7 +84,9 @@ const Services = () => {
           <div className="grid-item">
             <div className="grid-item-header">
               <div className="grid-item-header-bar"></div>
-              <h2>CYBER SECURITY & INFORMATION ASSURANCE</h2>
+              <h2 data-aos="fade-right">
+                CYBER SECURITY & INFORMATION ASSURANCE
+              </h2>
             </div>
             <div className="grid-item-list">
               <ul>
@@ -101,7 +110,9 @@ const Services = () => {
           <div className="grid-item">
             <div className="grid-item-header">
               <div className="grid-item-header-bar"></div>
-              <h2>PROJECT/ PROGRAM MANAGEMENT SERVICES</h2>
+              <h2 data-aos="fade-right">
+                PROJECT/ PROGRAM MANAGEMENT SERVICES
+              </h2>
             </div>
             <div className="grid-item-list">
               <ul>
@@ -127,7 +138,7 @@ const Services = () => {
           <div className="grid-item">
             <div className="grid-item-header">
               <div className="grid-item-header-bar"></div>
-              <h2>HEALTHCARE IT</h2>
+              <h2 data-aos="fade-right">HEALTHCARE IT</h2>
             </div>
             <div className="grid-item-list">
               <ul>
@@ -146,7 +157,7 @@ const Services = () => {
           <div className="grid-item">
             <div className="grid-item-header">
               <div className="grid-item-header-bar"></div>
-              <h2>FINANCE & ACCOUNTING</h2>
+              <h2 data-aos="fade-right">FINANCE & ACCOUNTING</h2>
             </div>
             <div className="grid-item-list">
               <ul>
@@ -166,7 +177,7 @@ const Services = () => {
           <div className="grid-item">
             <div className="grid-item-header">
               <div className="grid-item-header-bar"></div>
-              <h2>EXECUTIVE SEARCH</h2>
+              <h2 data-aos="fade-right">EXECUTIVE SEARCH</h2>
             </div>
             <div className="grid-item-list">
               <ul>
@@ -182,7 +193,7 @@ const Services = () => {
         </section>
         <section className="grid-container-3">
           <div className="grid-container-3-desc">
-            <h2>
+            <h2 data-aos="fade-right">
               We provide candidates on a Nationwide scale, now billing in 42 of
               the 50 states. We invest in taking the time to meet and maintain
               relationships across country as well as invest the time in
