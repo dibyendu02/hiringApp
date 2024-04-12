@@ -2,14 +2,11 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="text-white " style={{ backgroundColor: "#4B0891" }}>
+    <footer
+      className="text-white w-full"
+      style={{ backgroundColor: "#4B0891" }}
+    >
       <div className="container  lg:px-5 pt-32 pb-16 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col md:justify-around items-center">
-        {/* <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-          <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-            <img src="https://jigoindia.com/wp-content/themes/jigomain/images/jigo-logo.png" />
-          </a>
-        </div> */}
-
         <div className="lg:w-1/3 px-4 ">
           <h2 className="title-font font-semibold  text-white-900 mb-3 text-lg">
             Contact

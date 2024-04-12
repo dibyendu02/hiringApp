@@ -5,10 +5,10 @@ import Footer from "../components/Footer";
 
 const Contact = () => {
   return (
-    <div className="w-[100%] h-full ">
+    <div className="w-full h-full ">
       <Navbar />
-      <div className="w-[100%] h-[120%] bg-red-400 overflow-x-hidden relative ">
-        <img src={bg} className="w-full object-contain " />
+      <div className="w-[100%] h-[120%] bg-red-400 overflow-hidden relative ">
+        <img src={bg} className="w-full h-full  object-contain " />
 
         <div className="w-[100%]  md:absolute bg-[#c7c7c7] text-white top-24  md:px-28 p-10 pt-16 md:pt-20 pb-10 ">
           <div className="md:w-[45%] ">
