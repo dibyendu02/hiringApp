@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import "./Services.css";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 const Services = () => {
   return (
     <div>
@@ -188,8 +189,13 @@ const Services = () => {
               learning the nuances for local markets.
             </h2>
           </div>
-          <div className="grid-container-3-btn">
-            <span>FIND TALENT</span>
+          <div className="flex justify-center py-4">
+            <Link
+              to="/contact"
+              className="rounded-[40px] bg-blue-800 hover:bg-blue-300 text-white hover:text-black font-normal hover:bottom-0 px-5 py-3"
+            >
+              FIND TALENT
+            </Link>
           </div>
         </section>
       </div>

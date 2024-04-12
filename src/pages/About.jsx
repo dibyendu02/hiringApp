@@ -3,6 +3,7 @@ import "./About.css";
 import logo from "./img.jpg";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 const about = () => {
   return (
     <div className="main w-full">
@@ -43,8 +44,9 @@ const about = () => {
           </p>
 
           <div className="btn-container">
-            <span>LEARN MORE</span>
-            <span></span>
+            <Link to="/contact" className="text-white">
+              LEARN MORE
+            </Link>
           </div>
         </div>
         <div className="img-container">

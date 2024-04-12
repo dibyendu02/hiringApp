@@ -43,12 +43,12 @@ const Navbar = () => {
 
       <div className=" mx-auto px-4  ">
         <div className="flex justify-center py-4">
-          <a
-            href="#"
+          <Link
+            to="/contact"
             className="rounded-[40px] bg-red-600 hover:bg-red-400 text-white hover:text-black font-normal hover:bottom-0 px-5 py-3"
           >
             FIND TALENT
-          </a>
+          </Link>
         </div>
       </div>
 
