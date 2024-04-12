@@ -78,7 +78,7 @@ const Contact = () => {
             <span className="text-black">Leave us a message...</span>
             <textarea className="w-full h-24 bg-transparent border-b focus:outline-none focus:border-gray-600 text-black resize-none p-2" />
           </div>
-          <button className="bg-black text-white rounded-3xl w-36 py-3 px-4 my-4">
+          <button className="bg-black text-white rounded-3xl w-36 py-3 flex justify-center my-4">
             Submit
           </button>
         </div>
