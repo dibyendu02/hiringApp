@@ -2,7 +2,9 @@ import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import bg from "../assets/home/2.jpg";
 import Footer from "../components/Footer";
-import card from "../assets/home/laptop.png";
+import card1 from "../assets/home/laptop.png";
+import card2 from "../assets/home/hacking.png";
+import card3 from "../assets/home/doctor.png";
 import bgVideo from "../assets/home/bgVideo.mp4";
 import human1 from "../assets/home/human1.png";
 import human2 from "../assets/home/human2.png";
@@ -125,18 +127,18 @@ const Home = () => {
             <div className="bg-black px-8 py-3 md:w-80 w-60 md:ml-20 rounded-b-xl">
               <p className="text-white text-lg font-bold">Areas of Expertise</p>
             </div>
-            <div className="flex flex-col h-full justify-between px-24 py-10 gap-20 items-center md:flex-row">
-              <div className="flex flex-col gap-2 justify-center items-center h-[80%] ">
+            <div className="flex flex-col h-full justify-between md:px-24 py-10 gap-20 items-center md:flex-row">
+              <div className="flex flex-col gap-2 justify-center items-center w-[80%] h-[80%] ">
                 <img
-                  src={card}
+                  src={card2}
                   alt="laptop"
-                  className="w-full h-[60%] rounded-xl"
+                  className="w-[full] md:h-[60%] h-full rounded-xl"
                 />
                 <p className="text-xl text-black">CYBER SECURITY</p>
               </div>
-              <div className="flex flex-col gap-2 justify-center items-center h-[80%] ">
+              <div className="flex flex-col gap-2 justify-center items-center w-[80%] h-[80%] ">
                 <img
-                  src={card}
+                  src={card1}
                   alt="laptop"
                   className="w-full h-[60%] rounded-xl"
                 />
@@ -144,9 +146,9 @@ const Home = () => {
                   INFORMATION TECHNOLOGY
                 </p>
               </div>
-              <div className="flex flex-col gap-2 justify-center items-center h-[80%] ">
+              <div className="flex flex-col gap-2 justify-center items-center w-[80%] h-[80%] ">
                 <img
-                  src={card}
+                  src={card3}
                   alt="laptop"
                   className="w-full h-[60%] rounded-xl"
                 />
@@ -180,10 +182,11 @@ const Home = () => {
               {/* Testimonial 2 */}
               <div className="max-w-xs  p-6 ">
                 <p className="text-white md:h-48">
-                  "Pinaka Staffing Solutions provided us with top-notch
-                  candidates, and their customer service is exceptional.I was
-                  amazed by Pinaka's efficiency and professionalism. They made
-                  the hiring process a breeze."
+                  "Incredible experience with Pinaka Staffing Solutions! Their
+                  team provided us with highly qualified candidates, and their
+                  customer service exceeded our expectations. Pinaka's
+                  professionalism and efficiency made the entire hiring process
+                  seamless."
                 </p>
 
                 <div className="flex gap-2 items-center">
@@ -197,10 +200,10 @@ const Home = () => {
               {/* Testimonial 3 */}
               <div className="max-w-xs  p-6 ">
                 <p className="text-white md:h-48">
-                  "Pinaka Staffing Solutions provided us with top-notch
-                  candidates, and their customer service is exceptional.I was
-                  amazed by Pinaka's efficiency and professionalism. They made
-                  the hiring process a breeze."
+                  "Pinaka Staffing Solutions went above and beyond to deliver
+                  outstanding candidates for our company. Their exceptional
+                  customer service and expertise made working with them a
+                  pleasure. "
                 </p>
                 <div className="flex gap-2 items-center">
                   <img src={human1} className="w-10 h-10 rounded-full" />

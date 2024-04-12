@@ -14,18 +14,18 @@ const about = () => {
       <section className="main-2">
         <div className="main-2-para">
           <p>
-            "Falcon IT specializes in staffing small businesses in the federal
+            "Pinaka specializes in staffing small businesses in the federal
             sector. As Founder and CEO, I started Falcon because there was a
             need for better pricing, customizable contracts and flexible payment
             terms for small federal contractors. Most importantly, small
             businesses needed the same service and attention provided to the
-            large well-known government contractors. Falcon IT takes special
-            pride in helping Service Disabled Veteran Owned Businesses
-            (SDVOSB’s), Women-Owned Small Businesses (WOSB’s), Minority Owned
-            and many more."
+            large well-known government contractors. Pinaka takes special pride
+            in helping Service Disabled Veteran Owned Businesses (SDVOSB’s),
+            Women-Owned Small Businesses (WOSB’s), Minority Owned and many
+            more."
             <br />
             <span style={{ color: "red" }}>
-              —Brandon Shepherdson CEO & Founder, Falcon IT & Staffing Solutions
+              —Brandon Shepherdson CEO & Founder, Pinaka & Staffing Solutions
             </span>
             <br />
             Seeking qualified candidates can be time-consuming. We understand
@@ -58,8 +58,8 @@ const about = () => {
           </div>
           <div className="last-container-h2">
             <h2>
-              Falcon IT & Staffing Solutions, LLC (Falcon) assists businesses
-              with temporary and direct hire staffing in the Public and Private
+              Pinaka & Staffing Solutions, Pinaka assists businesses with
+              temporary and direct hire staffing in the Public and Private
               Sectors. Falcon provides contingent recruiting services to
               government contractors across the United States, with a special
               focus on helping small business grow by offering affordable hiring
@@ -68,12 +68,12 @@ const about = () => {
           </div>
           <div className="last-container-p">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-              nesciunt eligendi saepe fuga maiores at, iste dolore magni
-              sapiente repellat quo nulla quas? Ipsum alias voluptas veritatis
-              quisquam porro aliquid similique, distinctio saepe sunt accusamus
-              facere rem qui suscipit, modi dolorum dolores ab quas omnis
-              placeat, repellendus ea fugiat consequuntur?
+              Pinaka & Staffing Solutions and Falcon offer staffing solutions
+              tailored to the needs of businesses in both the Public and Private
+              Sectors. Pinaka specializes in temporary and direct hire staffing,
+              catering to a diverse range of industries. Meanwhile, Falcon
+              focuses on providing contingent recruiting services to government
+              contractors nationwide.
             </p>
           </div>
           <div className="core-values">

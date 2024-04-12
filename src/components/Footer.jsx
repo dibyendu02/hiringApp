@@ -19,7 +19,7 @@ const Footer = () => {
               <p className="text-white/60 ">(888) 519-2065</p>
             </li>
             <li>
-              <p className="text-white/60 ">Info@falconitss.com</p>
+              <p className="text-white/60 ">email@pinakastaffing.com</p>
             </li>
           </nav>
         </div>
@@ -84,39 +84,12 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-        {/* <div className="flex flex-col justify-center items-center mt-5 w-full px-4 lg:hidden">
-          <h2 className="title-font font-bold font-mono text-white-900 tracking-widest mb-3 text-lg">
-            Contact Us
-          </h2>
-          <nav className="list-none mb-10 text-center">
-            <li>
-              <a className="text-white hover:text-gray-800">
-                32, Ezra Street Room No-518 Calcutta, W.B 700001
-              </a>
-            </li>
-            <li>
-              <a className="text-white hover:text-gray-800">+91 83360 22220</a>
-            </li>
-            <li>
-              <a className="text-white hover:text-gray-800">
-                www.jigoindia.com
-              </a>
-            </li>
-            <li>
-              <a className="text-white hover:text-gray-800">
-                hirawat@jigoindia.com
-              </a>
-            </li>
-          </nav>
-        </div> */}
       </div>
 
       <div className="bg-blue-950 py-10">
         <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
           <p className="text-white/80 text-sm text-center sm:text-left">
-            © 2022 Falcon IT Staffing Solutions. Proudly created by Wild Island
-            Marketing.
+            © 2024 Pinaka Staffing Solutions.
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
             <a className="text-gray-500">

@@ -70,7 +70,7 @@ const Contact = () => {
               CALL TODAY: (888) 519-2065
             </p>
             <p className="text-blue-950 text-xl">
-              Email: bshepherdson@falconitss.com.
+              Email: resume@pinakastaffing.com
             </p>
 
             <br />
