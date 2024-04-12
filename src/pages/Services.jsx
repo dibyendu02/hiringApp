@@ -190,7 +190,6 @@ const Services = () => {
           </div>
           <div className="grid-container-3-btn">
             <span>FIND TALENT</span>
-            <span>FIND A CAREER</span>
           </div>
         </section>
       </div>
