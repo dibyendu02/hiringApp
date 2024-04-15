@@ -16,6 +16,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Carousel from "../components/Carousel";
 import FAQ from "../components/Faq";
+import CardCarousel from "../components/Carousel";
 
 const FAQs = [
   {
@@ -307,9 +308,13 @@ const Home = () => {
             </div>
           </div>
           {/* Carousel  */}
-          {/* <div className="w-full h-[100vh] bg-black">
-            <Carousel items={items} />
-          </div> */}
+          <div className="w-full bg-black flex flex-col items-center">
+            <h1 className="text-center md:py-16 py-5 md:w-[60%] text-4xl px-10">
+              Placing our candidates in a job within 72 hours of their initial
+              interview date.
+            </h1>
+            <CardCarousel />
+          </div>
 
           {/* FAQ  */}
 
