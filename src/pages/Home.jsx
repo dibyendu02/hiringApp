@@ -19,64 +19,21 @@ import FAQ from "../components/Faq";
 
 const FAQs = [
   {
-    question:
-      "WHAT IS THE PROCESS FOR FEDERAL GOVERNMENT & PRIVATE SECTOR RECRUITING",
-    answer: `Step 1: Review job description
-
-    Step 2: Identify the required and preferred skills / experience, education, certifications, bill rate and salary
-    
-    Step 3: Perform an internal database search in the Falcon ATS for qualified talent, network for referrals, post position(s) on job boards / social media sites
-    
-    Step 4: Identify and fully vet candidate(s) (assess skills, obtain references, etc)
-    
-    Step 5: Submit resume to hiring manager
-    
-    Step 6: Interview`,
+    question: "How to hire through Pinaka Staffing ?",
+    answer: `It's very simple, you just need to fill the contact form on the contact page and we would be getting in touch with you for your hiring assistance.`,
   },
   {
     question:
-      "WHAT IS THE PROCESS FOR FEDERAL GOVERNMENT & PRIVATE SECTOR RECRUITING",
-    answer: `Step 1: Review job description
-
-    Step 2: Identify the required and preferred skills / experience, education, certifications, bill rate and salary
-    
-    Step 3: Perform an internal database search in the Falcon ATS for qualified talent, network for referrals, post position(s) on job boards / social media sites
-    
-    Step 4: Identify and fully vet candidate(s) (assess skills, obtain references, etc)
-    
-    Step 5: Submit resume to hiring manager
-    
-    Step 6: Interview`,
+      "What are the domians where Pinaka Staffing can provide manpower ?",
+    answer: `We cover a large spectrum, it includes technology, human resource, management.`,
   },
   {
-    question:
-      "WHAT IS THE PROCESS FOR FEDERAL GOVERNMENT & PRIVATE SECTOR RECRUITING",
-    answer: `Step 1: Review job description
-
-    Step 2: Identify the required and preferred skills / experience, education, certifications, bill rate and salary
-    
-    Step 3: Perform an internal database search in the Falcon ATS for qualified talent, network for referrals, post position(s) on job boards / social media sites
-    
-    Step 4: Identify and fully vet candidate(s) (assess skills, obtain references, etc)
-    
-    Step 5: Submit resume to hiring manager
-    
-    Step 6: Interview`,
+    question: "How can I post a job on your platform?",
+    answer: `Posting a job is simple! Just sign up as an employer, log in to your account, and navigate to the "Post a Job" section. Fill out the required details about the job, such as job title, description, requirements, and location, and your job will be live on our platform for job seekers to view.`,
   },
   {
-    question:
-      "WHAT IS THE PROCESS FOR FEDERAL GOVERNMENT & PRIVATE SECTOR RECRUITING",
-    answer: `Step 1: Review job description
-
-    Step 2: Identify the required and preferred skills / experience, education, certifications, bill rate and salary
-    
-    Step 3: Perform an internal database search in the Falcon ATS for qualified talent, network for referrals, post position(s) on job boards / social media sites
-    
-    Step 4: Identify and fully vet candidate(s) (assess skills, obtain references, etc)
-    
-    Step 5: Submit resume to hiring manager
-    
-    Step 6: Interview`,
+    question: "Can I contact the company directly regarding a job listing?",
+    answer: `Absolutely! We encourage communication between job seekers and employers. Each job listing includes contact information for the hiring company. You can reach out to them directly via email or phone to express your interest in the position or ask any questions you may have.`,
   },
 ];
 
@@ -350,12 +307,13 @@ const Home = () => {
             </div>
           </div>
           {/* Carousel  */}
-          <div className="w-full h-[100vh] bg-black">
+          {/* <div className="w-full h-[100vh] bg-black">
             <Carousel items={items} />
-          </div>
+          </div> */}
+
           {/* FAQ  */}
 
-          <div className="w-full h-[120%] md:h-full  bg-white">
+          <div className="w-full h-[80%] md:h-full  bg-white">
             <div className="bg-black px-8 py-3 md:w-80 w-60 md:ml-20 rounded-b-xl">
               <p className="text-white text-lg font-bold">FAQs</p>
             </div>

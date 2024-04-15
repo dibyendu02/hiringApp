@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { CiMenuBurger } from "react-icons/ci";
+import logo from "../assets/logo.jpg";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -14,7 +15,7 @@ const Navbar = () => {
               setShowMenu(false);
             }}
           >
-            Logo
+            <img src={logo} alt="logo" className="w-32 h-20" />
           </Link>
         </h3>
       </div>
