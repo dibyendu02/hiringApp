@@ -17,6 +17,7 @@ import "aos/dist/aos.css";
 import Carousel from "../components/Carousel";
 import FAQ from "../components/Faq";
 import CardCarousel from "../components/Carousel";
+import { Link } from "react-router-dom";
 
 const FAQs = [
   {
@@ -76,9 +77,12 @@ const Home = () => {
               quickly provide screened cleared candidates, better pricing,
               customizable contracts and flexible payment terms.
             </p>
-            <button className="bg-blue-800 w-36 h-12 flex justify-center items-center rounded-3xl font-normal mt-8">
+            <Link
+              to="/about"
+              className="bg-blue-800 w-36 h-12 flex justify-center text-white hover:text-blue-200 font-semibold items-center rounded-3xl font-normal mt-8"
+            >
               Learn More
-            </button>
+            </Link>
           </div>
 
           <div className="flex w-full justify-center mt-28 py-20 bg-transparent">
@@ -160,14 +164,14 @@ const Home = () => {
 
           {/* Why Choose Us */}
 
-          <div className="relative w-full md:h-[135%] h-[200%] bg-blue-950">
+          <div className="relative w-full  md:h-[135%] h-[180%] bg-blue-950">
             <img src={developer} alt="developer" className="content-cover" />
-            <div className="absolute md:w-[45%] md:left-32  inset-0 flex flex-col ">
+            <div className="absolute xl:w-[45%] md:w-[65%] md:left-32  inset-0 flex flex-col ">
               <div className="bg-white px-8 py-3 md:w-80 w-60  rounded-b-xl">
                 <p className="text-black text-lg font-bold">Why Choose Us</p>
               </div>
               <div className="w-full flex flex-col md:flex-row md:p-5 ">
-                <div className="md:w-1/2 w-full p-5 flex flex-col gap-10">
+                <div className="md:w-1/2 w-full p-5 flex flex-col gap-5 xl:gap-10">
                   <div className="border w-14 h-14 flex justify-center items-center border-white p-2 rounded-md  ">
                     <FaDollarSign color="white" size={30} className="" />
                   </div>
@@ -177,7 +181,7 @@ const Home = () => {
                     businesses alike.
                   </p>
                 </div>
-                <div className="md:w-1/2 w-ful p-5 flex flex-col gap-10">
+                <div className="md:w-1/2 w-ful p-5 flex flex-col gap-5 xl:gap-10">
                   <div className="border w-14 h-14 flex justify-center items-center border-white p-2 rounded-md  ">
                     <FaDollarSign color="white" size={30} className="" />
                   </div>
@@ -189,7 +193,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="w-full flex flex-col md:flex-row p-5 ">
-                <div className="md:w-1/2 w-full p-5 flex flex-col gap-10">
+                <div className="md:w-1/2 w-full p-5 flex flex-col gap-5 xl:gap-10">
                   <div className="border w-14 h-14 flex justify-center items-center border-white p-2 rounded-md  ">
                     <FaDollarSign color="white" size={30} className="" />
                   </div>
@@ -201,7 +205,7 @@ const Home = () => {
                     that is best suited to fit your needs.
                   </p>
                 </div>
-                <div className="md:w-1/2 w-full p-5 flex flex-col gap-10">
+                <div className="md:w-1/2 w-full p-5 flex flex-col gap-5 xl:gap-10">
                   <div className="border w-14 h-14 flex justify-center items-center border-white p-2 rounded-md  ">
                     <FaDollarSign color="white" size={30} className="" />
                   </div>

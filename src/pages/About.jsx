@@ -19,33 +19,32 @@ const about = () => {
       </section>
       <section className="main-2">
         <div className="main-2-para">
-          <p>
-            "Pinaka specializes in staffing small businesses in the federal
-            sector. As Founder and CEO, I started Falcon because there was a
-            need for better pricing, customizable contracts and flexible payment
-            terms for small federal contractors. Most importantly, small
-            businesses needed the same service and attention provided to the
-            large well-known government contractors. Pinaka takes special pride
-            in helping Service Disabled Veteran Owned Businesses (SDVOSB’s),
-            Women-Owned Small Businesses (WOSB’s), Minority Owned and many
-            more."
+          <h1 className="text-3xl my-10 font-semibold">
+            Driving success through expert IT Consultation & Product Development
+          </h1>
+          <p className="text-xl">
+            " Pinaka specializes is a pioneer in IT consultancy, dedicated to
+            shaping a future where technology empowers businesses. Our journey,
+            marked by innovation and resilience, encompasses global expansion,
+            strategic partnerships, and accolades in the ever-evolving digital
+            era. Adaptable and forward-thinking, we navigate challenges with
+            agility, leveraging cutting-edge technologies for success."
             <br />
-            <span style={{ color: "red" }}>
-              —Brandon Shepherdson CEO & Founder, Pinaka & Staffing Solutions
-            </span>
+          </p>
+          <h1 className="text-3xl my-10 font-semibold">Mission</h1>
+          <p className="text-xl">
+            " At Pinaka Staffing, our mission is clear: to empower businesses
+            with innovative, technology-driven solutions tailored for success in
+            the digital era. "
             <br />
-            Seeking qualified candidates can be time-consuming. We understand
-            our clients needs which is why we ask the important questions and
-            let our database filter out qualified candidates for your needs.
-            Qualified candidates still require additional screening, we make
-            sure they have the certifications and clearances needed to meet the
-            job requirements.Since 2013 this process has been repeated thousands
-            of times for top federal government agencies. We deliver results
-            within 72 hours. For more information about government agencies we
-            service, see below
+          </p>
+          <h1 className="text-3xl my-10 font-semibold">Vision</h1>
+          <p className="text-xl">
+            " We envision a future where Pinaka Staffing serves as the catalyst
+            for transformative technological advancements, fostering an
+            environment where businesses thrive through cutting-edge solutions.
+            "
             <br />
-            <br />
-            NEED STAFFING ASSISTANCE?
           </p>
 
           <div className="btn-container">
@@ -65,22 +64,15 @@ const about = () => {
           </div>
           <div className="last-container-h2">
             <h2 data-aos="fade-right">
-              Pinaka & Staffing Solutions, Pinaka assists businesses with
-              temporary and direct hire staffing in the Public and Private
-              Sectors. Falcon provides contingent recruiting services to
-              government contractors across the United States, with a special
-              focus on helping small business grow by offering affordable hiring
-              solutions.
+              Empowering success through customer-centricity
             </h2>
           </div>
           <div className="last-container-p">
             <p data-aos="fade-right">
-              Pinaka & Staffing Solutions and Falcon offer staffing solutions
-              tailored to the needs of businesses in both the Public and Private
-              Sectors. Pinaka specializes in temporary and direct hire staffing,
-              catering to a diverse range of industries. Meanwhile, Falcon
-              focuses on providing contingent recruiting services to government
-              contractors nationwide.
+              At Pinaka Staffing, we’re dedicated to your success. With a
+              customer-first approach ingrained in our culture, we prioritize
+              understanding your needs and delivering tailored solutions. Trust
+              us to put you first every step of the way.
             </p>
           </div>
           <div className="core-values">
@@ -88,50 +80,66 @@ const about = () => {
           </div>
           <div className="box-container">
             <div className="box">
-              <div className="box-head">
-                <div className="bar"></div>
-                <h3 data-aos="fade-right">Small Business Services</h3>
+              <div className="box-head relative">
+                {/* <div className="bar"></div> */}
+                <div className="bg-blue-600 absolute w-2 h-16 -left-3 top-0 rounded-md "></div>
+                <h3 data-aos="fade-right">Innovation</h3>
               </div>
               <div className="box-desc">
                 <p data-aos="fade-right">
-                  Falcon offers affordable hiring solutions and customizable
-                  contracts and payment terms.
+                  We are driven by a relentless pursuit of innovation,
+                  constantly exploring emerging technologies and pushing the
+                  boundaries of what’s possible. Our innovative mindset enables
+                  us to anticipate industry trends, adapt to change.
                 </p>
               </div>
             </div>
             <div className="box">
-              <div className="box-head">
-                <div className="bar"></div>
-                <h3 data-aos="fade-right">Contingent Recruiting</h3>
+              <div className="box-head relative">
+                {/* <div className="bar"></div> */}
+                <div className="bg-blue-600 absolute w-2 h-16 -left-3 top-0 rounded-md "></div>
+                <h3 data-aos="fade-right">Collaboration</h3>
               </div>
               <div className="box-desc">
                 <p data-aos="fade-right">
-                  These services include pricing, incumbent capture, key
-                  personnel resumes and contingent offer letters.
+                  Collaboration lies at the heart of everything we do. We
+                  believe in the power of teamwork and synergy, fostering an
+                  environment where diverse perspectives are valued, and ideas
+                  are shared freely. By collaborating closely with our clients,
+                  partners, and internal teams.
                 </p>
               </div>
             </div>
             <div className="box">
-              <div className="box-head">
-                <div className="bar"></div>
-                <h3 data-aos="fade-right">Cleared Talent Recruiting</h3>
+              <div className="box-head relative">
+                {/* <div className="bar"></div> */}
+                <div className="bg-blue-600 absolute w-2 h-16 -left-3 top-0 rounded-md "></div>
+                <h3 data-aos="fade-right">Customer-Centricity</h3>
               </div>
               <div className="box-desc">
                 <p data-aos="fade-right">
-                  Top Secret, Interim Secret, Secret, Top Secret/SCI, Top
-                  Secret/SCI with CI Poly, Top Secret/SCI with Lifestyle Poly.
+                  Our customers are at the forefront of everything we do. We are
+                  committed to understanding their unique needs, challenges, and
+                  goals, and to delivering solutions that address these
+                  effectively. By placing the customer at the center of our
+                  operations.
                 </p>
               </div>
             </div>
             <div className="box">
-              <div className="box-head">
-                <div className="bar"></div>
-                <h3 data-aos="fade-right">Military Veteran Recruiting</h3>
+              <div className="box-head relative">
+                {/* <div className="bar"></div> */}
+                <div className="bg-blue-600 absolute w-2 h-16 -left-3 top-0 rounded-md "></div>
+                <h3 data-aos="fade-right">Integrity</h3>
               </div>
               <div className="box-desc">
                 <p data-aos="fade-right">
-                  Help military veterans assimilate into the workforce, help
-                  businesses meet their military veterans hiring goals.
+                  Integrity is non-negotiable at Sapot Systems. We conduct
+                  ourselves with honesty, transparency, and ethical integrity in
+                  all our interactions, both internally and externally. Our
+                  commitment to integrity extends to our relationships with
+                  clients, partners, employees, and the communities in which we
+                  operate, earning us trust and credibility in the industry.
                 </p>
               </div>
             </div>

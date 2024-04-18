@@ -72,7 +72,7 @@ const Contact = () => {
             </p>
 
             <p className="text-blue-950 text-2xl mt-2">
-              CALL TODAY: (888) 519-2065
+              CALL TODAY: +1 256 743 0829
             </p>
             <p className="text-blue-950 text-xl">
               Email: resume@pinakastaffing.com

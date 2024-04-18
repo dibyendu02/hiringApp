@@ -22,10 +22,15 @@ const Navbar = () => {
 
       <div className=" mx-auto px-4  ">
         <div className="flex justify-center py-4 ">
-          <ul className="md:flex items-center bg-blue-950 px-10 py-3 rounded-[40px] hidden ">
+          <ul className="md:flex items-center bg-red-600 px-10 py-3 rounded-[40px] hidden ">
+            {/* <li className="mx-4 ">
+              <Link to="/" className="text-white font-normal">
+                Home
+              </Link>
+            </li> */}
             <li className="mx-4 ">
               <Link to="/services" className="text-white font-normal">
-                Services
+                Area of Expertise
               </Link>
             </li>
             <li className="mx-4">

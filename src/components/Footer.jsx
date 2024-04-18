@@ -13,10 +13,13 @@ const Footer = () => {
           </h2>
           <nav className="list-none mb-10">
             <li>
-              <p className="text-white/60 ">Delray Beach, FL</p>
+              <p className="text-white/60 ">
+                13439 Exton Lane Houston,
+                <br /> Texas 77070
+              </p>
             </li>
             <li>
-              <p className="text-white/60 ">(888) 519-2065</p>
+              <p className="text-white/60 ">+1 256 743 0829</p>
             </li>
             <li>
               <p className="text-white/60 ">email@pinakastaffing.com</p>
