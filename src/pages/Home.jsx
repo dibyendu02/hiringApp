@@ -72,14 +72,18 @@ const Home = () => {
           <div className="md:pl-40 mt-20 p-8" data-aos="fade-right">
             <h1 className="md:text-[5.5rem] text-7xl">Scalable Staffing </h1>
             <h1 className="md:text-[5.5rem] text-7xl font-bold">Solutions </h1>
-            <p className="text-2xl md:w-[55%] w-[80%] pt-10 ">
+            <p className="text-2xl md:w-[55%] w-[90%] pt-10 ">
               Pinaka helps small businesses in the federal sector grow. We
               quickly provide screened cleared candidates, better pricing,
               customizable contracts and flexible payment terms.
             </p>
+            <p className="text-2xl md:w-[55%] w-[90%] pt-2">
+              This campaign will only be used for sharing relevant job openings
+              with the candidates.
+            </p>
             <Link
               to="/about"
-              className="bg-blue-800 w-36 h-12 flex justify-center text-white hover:text-blue-200 font-semibold items-center rounded-3xl font-normal mt-8"
+              className="bg-blue-800 w-36 h-12 flex justify-center text-white hover:text-blue-200 font-normal items-center rounded-3xl mt-8"
             >
               Learn More
             </Link>

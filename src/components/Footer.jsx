@@ -91,9 +91,16 @@ const Footer = () => {
 
       <div className="bg-blue-950 py-10">
         <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-          <p className="text-white/80 text-sm text-center sm:text-left">
-            © 2024 Pinaka Staffing Solutions.
-          </p>
+          <div className="flex flex-col gap-2">
+            <p className="text-white/80 text-sm text-center sm:text-left">
+              © 2024 Pinaka Staffing Solutions.
+            </p>
+            <p className="text-white/80 text-sm text-center sm:text-left">
+              This campaign will only be used for sharing relevant job openings
+              with the candidates.
+            </p>
+          </div>
+
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
             <a className="text-gray-500">
               <svg
