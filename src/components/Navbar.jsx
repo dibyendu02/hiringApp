@@ -43,6 +43,11 @@ const Navbar = () => {
                 Contact Us
               </Link>
             </li>
+            <li className="mx-4">
+              <Link to="/careers" className="text-white font-normal">
+                Careers
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
@@ -100,6 +105,17 @@ const Navbar = () => {
                 }}
               >
                 Contact Us
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/careers"
+                className="text-white text-2xl font-normal"
+                onClick={() => {
+                  setShowMenu(false);
+                }}
+              >
+                Careers
               </Link>
             </li>
           </ul>

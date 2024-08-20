@@ -29,32 +29,40 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      const response = await fetch("send_email.php", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-      if (response.ok) {
-        console.log("Email sent successfully");
-        // Optionally, reset the form data after submission
-        setFormData({
-          firstName: "",
-          lastName: "",
-          email: "",
-          phone: "",
-          jobTitle: "",
-          subject: "",
-          message: "",
-        });
-      } else {
-        console.error("Failed to send email");
-      }
-    } catch (error) {
-      console.error("Error sending email:", error);
+    // try {
+    //   const response = await fetch("send_email.php", {
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify(formData),
+    //   });
+    //   if (response.ok) {
+    //     console.log("Email sent successfully");
+    //     // Optionally, reset the form data after submission
+    //     setFormData({
+    //       firstName: "",
+    //       lastName: "",
+    //       email: "",
+    //       phone: "",
+    //       jobTitle: "",
+    //       subject: "",
+    //       message: "",
+    //     });
+    //   } else {
+    //     console.error("Failed to send email");
+    //   }
+    // } catch (error) {
+    //   console.error("Error sending email:", error);
+    // }
+
+    const formDataToSend = new FormData();
+    for (const key in formData) {
+      formDataToSend.append(key, formData[key]);
     }
+
+    console.log("Email sent successfully");
+    window.location.reload();
   };
 
   return (
