@@ -19,10 +19,10 @@ const Footer = () => {
               </p>
             </li>
             <li>
-              <p className="text-white/60 ">+1 256 743 0829</p>
+              <p className="text-white/60 ">+1 832 917 5737</p>
             </li>
             <li>
-              <p className="text-white/60 ">email@pinakastaffing.com</p>
+              <p className="text-white/60 ">admin@pinakastaffing.com</p>
             </li>
           </nav>
         </div>

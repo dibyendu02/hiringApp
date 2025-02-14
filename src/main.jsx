@@ -8,11 +8,12 @@ import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import Services from "./pages/Services.jsx";
 import Career from "./pages/Career.jsx";
+import ValentineProposal from "./App.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <ValentineProposal />,
   },
   {
     path: "/about",

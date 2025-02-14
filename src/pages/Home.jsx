@@ -258,12 +258,12 @@ const Home = () => {
           </div>
 
           {/* Testimonial */}
-          <div className="w-full md:h-[70vh] h-[150%] bg-blue-950">
+          {/* <div className="w-full md:h-[70vh] h-[150%] bg-blue-950">
             <div className="bg-white px-8 py-3 md:w-80 w-60 md:ml-20 rounded-b-xl">
               <p className="text-black text-lg font-bold">Testimonials</p>
             </div>
             <div className="flex md:flex-row flex-col items-center md:justify-center gap-8 md:gap-16  mt-10 ">
-              {/* Testimonial 1 */}
+              
               <div className="max-w-xs  p-6 ">
                 <p className="text-white md:h-60">
                   "Pinaka Staffing Solutions provided us with top-notch
@@ -280,7 +280,7 @@ const Home = () => {
                 </div>
               </div>
 
-              {/* Testimonial 2 */}
+             
               <div className="max-w-xs  p-6 ">
                 <p className="text-white md:h-60">
                   "Incredible experience with Pinaka Staffing Solutions! Their
@@ -298,7 +298,7 @@ const Home = () => {
                 </div>
               </div>
 
-              {/* Testimonial 3 */}
+             
               <div className="max-w-xs  p-6 ">
                 <p className="text-white md:h-60">
                   "Pinaka Staffing Solutions went above and beyond to deliver
@@ -314,7 +314,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* Carousel  */}
           <div className="w-full bg-black flex flex-col items-center">
             <h1 className="text-center md:py-16 py-5 md:w-[60%] text-4xl px-10">
